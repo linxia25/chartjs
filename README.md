@@ -1,5 +1,5 @@
-﻿# CPNT 262 Assignment 5: JSON Routes with Heroku and MongoDB Atlas
-By Xia Lin March 24, 2021
+﻿# CPNT 265 Assessments: 3rd-party plugin/library implementation: 5 points
+By Xia Lin April 15, 2021
 
 ## Description
 A website for online sales of high-end furniture!
