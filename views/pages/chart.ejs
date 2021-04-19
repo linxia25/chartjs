@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- pageTitle %></title>
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <script src="js/Chart.bundle.js"></script>
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <%- include('../partials/nav') %>
+
+  
+<div style="height:25vh;width:65vw;">
+  <canvas id="myChart"></canvas>
+</div>
+
+
+
+<script>
+
+new Chart(document.getElementById("myChart"), {
+    type: 'line',
+    data: {
+      labels: ["2010", "2011", "2012", "2013","2014", "2015", "2016", "2017", "2018","2019", "2020"],
+      datasets: [{
+        label: "Income",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+        data: [100,110,125,137,145,109,117,114,138,167,145]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Income in the past ten years',
+        fontSize: '36',
+        fontColor: 'orange',
+      }
+    }
+});
+</script>
+<%- include('../partials/footer') %>
+</body>
+</html>
